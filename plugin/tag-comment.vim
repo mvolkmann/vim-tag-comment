@@ -26,11 +26,11 @@ command! ElementComment execute "normal! vat\<esc>`<:'<,'>s/<!--/<!__/ge\<cr>:'<
 " :'b,'es/__>/-->/g\<cr> - fix nested ending comment delimters
 command! ElementUncomment execute "normal! ?!--\<cr>mb3x/--\<cr>me2x:'b,'es/<!__/<!--/ge\<cr>:'b,'es/__>/-->/ge\<cr>"
 
-command TagComment execute "normal! vi<\<esc>a--\<esc>`<i!--\<esc>"
-command TagUncomment execute "normal! vi<\<esc>hxx`<xxxh"
+command! TagComment execute "normal! vi<\<esc>a--\<esc>`<i!--\<esc>"
+command! TagUncomment execute "normal! vi<\<esc>hxx`<xxxh"
 
 nnoremap <leader>tc :ElementComment<cr>
 nnoremap <leader>tu :ElementUncomment<cr>
 
-nnoremap <leader>tC :TagStartComment<cr>
-nnoremap <leader>tU :TagStartUncomment<cr>
+nnoremap <leader>tC :TagComment<cr>
+nnoremap <leader>tU :TagUncomment<cr>
