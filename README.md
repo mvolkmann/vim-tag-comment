@@ -12,7 +12,8 @@ so they can be restored if the tag is uncommented later.
 
 Unless already mapped to something else, the following key mappings
 are configured:
-<leader>tc :ElementComment<cr>
-<leader>tu :ElementUncomment<cr>
-<leader>tC :TagComment<cr>
-<leader>tU :TagUncomment<cr>
+
+* <leader>tc :ElementComment<cr>
+* <leader>tu :ElementUncomment<cr>
+* <leader>tC :TagComment<cr>
+* <leader>tU :TagUncomment<cr>
