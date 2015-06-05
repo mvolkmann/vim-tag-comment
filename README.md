@@ -2,22 +2,28 @@ This is a Vim plugin provides commands that
 "properly" comment and uncomment HTML and XML tags.
 All the plugins I have seen for this would take the following:
 
+```xml
 <foo> 
   <bar>baz</bar> 
-</foo> 
+</foo>
+```
 
 and comment it like this:
 
+```xml
 <!--<foo>-->
   <!--<bar>baz</bar>-->
 <!--</foo>-->
+```
 
 This is ugly and excessive!
 I believe the proper way to do this is:
 
+```xml
 <!--foo>
   <bar>baz</bar>
 </foo-->
+```
 
 The provided ElementComment command does this and
 the provided ElementUncomment command does the opposite.
