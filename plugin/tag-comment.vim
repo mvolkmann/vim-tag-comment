@@ -1,5 +1,7 @@
 " See the accompanying README for details.
 
+" normal! - run following sequence of commands in normal mode;
+"   ! means don’t use remapped commands
 " mt - mark the current location as "t"
 " vat - visually select all text with the current tag
 " \<esc> - exit visual selection mode
